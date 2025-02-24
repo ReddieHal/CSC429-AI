@@ -48,7 +48,8 @@ $ sudo mv cuda-wsl-ubuntu.pin /etc/apt/preferences.d/cuda-repository-pin-600
 $ wget https://developer.download.nvidia.com/compute/cuda/12.8.0/local_installers/cuda-repo-wsl-ubuntu-12-8-local_12.8.0-1_amd64.deb
 $ sudo dpkg -i cuda-repo-wsl-ubuntu-12-8-local_12.8.0-1_amd64.deb
 $ sudo cp /var/cuda-repo-wsl-ubuntu-12-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
-$ sudo apt-get updatesudo apt-get -y install cuda-toolkit-12-8
+$ sudo apt-get update
+$ sudo apt-get -y install cuda-toolkit-12-8
 ```
 6. Now we can install the rest of the requirements. Take the stripped requirements page to utilize in pip install -r requirements or strip them from the environment.yml with:
 ```
