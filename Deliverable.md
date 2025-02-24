@@ -60,4 +60,5 @@ grep -A 1000 " - pip:" <PATH TO ENV.YAML> | tail -n +2 | sed 's/ - //g' > <PATH 
 pip install -r requirements.txt
 ```
 7. Now you should be able to run the helper bash script to run the desired model and settings. The helper.sh should be run in os_expr!
-8.  You shouldn't reach this but if any other errors appear they may be resolved.
+8. Don't forget to download the dataset files from the PrimeVUL repo and add them into a folder named primeVULjson. Or just update the script to point to wherever they're stored.
+9.  You shouldn't reach this but if any other errors appear they may be resolved.
